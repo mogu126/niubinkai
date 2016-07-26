@@ -1,0 +1,59 @@
+@mixin css3($name, $value) {
+  -webkit-#{$name}: #{$value};
+  -moz-#{$name}: #{$value};
+  -o-#{$name}: #{$value};
+  #{$name}: #{$value};
+}
+@mixin pageFlag($backgroundColor){
+  .flag{
+    margin: 0 auto;
+    border-top: 1px solid rgba(255,255,255,.3);
+    width: pxToRem(286px);
+    text-align: center;
+    span{
+      display: inline-block;
+      padding: 0 pxToRem(16px);
+      background-color: $backgroundColor;
+      color: #93BBC3;
+      font-size: pxToRem(18px);
+      position: relative;
+      top:pxToRem(-27px);
+    }
+  }
+}
+@mixin longLine($backgroundColor){
+  .plate{
+    border-top: 1px solid rgba(255,255,255,.3);
+    position: relative;
+    i{
+      display: inline-block;
+      width:pxToRem(18px);
+      height:pxToRem(18px);
+      border: 1px solid transparent;
+      border-radius: 50%;
+      background-color: #A1C1C8;
+      position: absolute;
+    }
+    i.lf{
+      top:pxToRem(-10px);
+      left:pxToRem(-10px);
+    }
+    i.rt{
+      top:pxToRem(-10px);
+      right:pxToRem(-10px);
+    }
+    span{
+      position: relative;
+      top:pxToRem(-25px);
+      font-size: pxToRem(30px);
+      display: inline-block;
+      padding: 0 pxToRem(33px);
+      background-color: $backgroundColor ;
+    }
+    p{
+      font-size: pxToRem(24px);
+      position: relative;
+      top:pxToRem(-20px);
+    }
+  }
+}

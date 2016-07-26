@@ -1,0 +1,324 @@
+@import 'variable';
+@import 'function';
+@import 'reset';
+@import 'mixin';
+body{
+  color: #C9DFE2;
+  font: pxToRem(24px);
+  @include css3(background-image, linear-gradient(to bottom,#71aab4 0%, #5e9daa 50%, #29576b 100%));
+  background-repeat:no-repeat;
+  overflow-x: hidden;
+}
+.contain{
+  margin: 0 pxToRem(30px);
+  border:1px solid rgba(255,255,255,.3);
+  border-top: none;
+  border-bottom: none;
+  text-align: center;
+  height:100%;
+}
+header{
+  margin: pxToRem(24px);
+}
+.page-flag{
+  @include pageFlag(#71aab4);
+}
+.flag{
+  margin-bottom: pxToRem(86px);
+}
+.header-list{
+  text-align: center;
+  overflow: hidden;
+  padding-left: pxToRem(40px);
+  padding-bottom: pxToRem(30px);
+  li{
+    float: left;
+    width:50%;
+    line-height: 1.7;
+    font-size: pxToRem(28px);
+    text-align: left;
+    i{
+      display: inline-block;
+      width:8px;
+      height:8px;
+      margin-right: pxToRem(12px);
+      border-radius: 50%;
+      border: 1px solid transparent;
+      background-color: #fff;
+    }
+  }
+}
+//长横线组件板块
+
+.plate-community{
+  margin-bottom: pxToRem(38px);
+  margin-top: pxToRem(20px);
+  @include longLine(#70A9B3);
+}
+img{
+  max-width: 100%;
+  height:auto;
+  text-align: center;
+}
+.project{
+  margin-top: pxToRem(60px);
+  margin-bottom: pxToRem(38px);
+}
+//短横线项目板块组件
+.project-info{
+  text-align: center;
+  .title-large{
+    font-size: pxToRem(30px);
+    margin-bottom: pxToRem(-13px);
+  }
+  .line-dot{
+    i{
+      display: inline-block;
+      width:pxToRem(140px);
+      height:pxToRem(1px);
+      border-top: pxToRem(1px) solid rgba(255,255,255,.3);
+    }
+    s{
+      display: inline-block;
+      width:pxToRem(8px);
+      height:pxToRem(8px);
+      border-radius: 50%;
+      background-color: #9FC1C8;
+      margin:pxToRem(7px) pxToRem(10px) 0 pxToRem(10px);
+    }
+  }
+  .title-small{
+    font-size: pxToRem(22px);
+  }
+}
+.contain>p{
+  font-size: pxToRem(24px);
+  margin: 0 pxToRem(30px);
+  text-align: justify;
+  text-indent: pxToRem(30px);
+  line-height: 1.4289;
+}
+.img-icon{
+  margin: pxToRem(60px) auto;
+}
+.project2{
+  margin-bottom: pxToRem(80px);
+}
+.plate-community2{
+  @include longLine(#69A5B0);
+}
+.img-icon2{
+  margin: pxToRem(40px) auto;
+}
+.img-icon3{
+  margin: pxToRem(60px) auto;
+}
+p.title{
+  text-align: center;
+  font-size: pxToRem(28px);
+  margin: pxToRem(25px) auto pxToRem(20px);
+  color: #C9DFE2;
+  opacity: .7;
+}
+.title-sm{
+  text-align: center;
+  margin: pxToRem(15px) auto;
+  i{
+    display: inline-block;
+    width: pxToRem(8px);
+    height:pxToRem(8px);
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  p{
+    display: inline-block;
+    margin-left: pxToRem(20px);
+    font-size: pxToRem(24px);
+  }
+}
+.plate-community3{
+  @include longLine(#62A0AC);
+  margin-top: pxToRem(70px);
+}
+.plate-community4{
+  @include longLine(#5894A2);
+  margin: pxToRem(80px) auto pxToRem(30px);
+}
+.plate-community5{
+  @include longLine(#477F8F);
+}
+.plate-community6{
+  @include longLine(#386B7D);
+}
+.footer{
+  @include pageFlag(#29576B);
+  margin-top: pxToRem(80px);
+  margin-bottom: pxToRem(3px);
+}
+//hotel
+.hotel-header{
+@include pageFlag(#71AAB4);
+  margin-bottom: pxToRem(50px);
+}
+.plate-community7{
+  @include longLine(#71AAB4);
+}
+p.title.title1{
+  margin-bottom: pxToRem(-45px);
+}
+p.title.title2{
+  margin-top: pxToRem(-45px);
+}
+h3.title{
+  text-align: center;
+  font-size: pxToRem(30px);
+  margin: pxToRem(30px) auto pxToRem(30px);
+  color:#C9DFE2;
+}
+.img-icon2>p{
+  font-size: pxToRem(24px);
+}
+//education
+.education-header{
+  @include pageFlag(#71AAB4);
+  margin-bottom: pxToRem(50px);
+}
+.hotel-header,.education-header,.business-header{
+  margin-top: pxToRem(25px);
+}
+ul.header-list.business-list{
+  margin:pxToRem(-20px) 0 pxToRem(60px) pxToRem(60px);
+}
+.plate-community8{
+  @include longLine(#70A9B3);
+}
+.title-sm.business-title{
+  margin-bottom: pxToRem(-20px);
+}
+h3.business-title{
+  font-size: pxToRem(28px);
+  margin: pxToRem(50px) auto pxToRem(-10px);
+}
+.plate-community9{
+  @include longLine(#66A3AE);
+}
+.plate-community10{
+  @include longLine(#619FAB);
+}
+.plate-community11{
+  @include longLine(#5695A3);
+  margin-top: pxToRem(70px);
+}
+.plate-community12{
+  margin-top: pxToRem(70px);
+  @include longLine(#447A8B);
+}
+.plate-community13{
+  margin-top: pxToRem(70px);
+  @include longLine(#356679);
+}
+.plate-community14{
+  @include longLine(#6EA8B2);
+}
+.plate-community15{
+  @include longLine(#6EA8B2);
+}
+.plate-community16{
+  @include longLine(#6EA8B2);
+}
+.plate-community17{
+  @include longLine(#5793A1);
+  margin-top: pxToRem(60px);
+}
+.plate-community18{
+  @include longLine(#467E8E);
+  margin-top: pxToRem(60px);
+}
+.plate-community19{
+  @include longLine(#70AAB4);
+}
+.plate-community20{
+  @include longLine(#6DA7B2);
+  margin-top: pxToRem(60px);
+}
+.plate-community21{
+  @include longLine(#62A0AC);
+  margin-top: pxToRem(60px);
+}
+.plate-community22{
+  @include longLine(#498292);
+  margin-top: pxToRem(60px);
+}
+.img-icon2>.title.title1{
+  margin-bottom: pxToRem(15px);
+}
+p.title-lg{
+  margin: pxToRem(20px) pxToRem(30px);
+  text-align: justify;
+  text-indent: pxToRem(30px);
+  line-height: 1.4289;
+}
+.table{
+  margin: pxToRem(60px) pxToRem(30px);
+  max-width: 100%;
+  p{
+    font-size: pxToRem(24px);
+    text-align: center;
+    margin-top: pxToRem(15px);
+    line-height: 1.4289;
+  }
+
+}
+table{
+  width:100%;
+  border-collapse: collapse;
+  td{
+    border: 1px solid #fff;
+    font-size: pxToRem(24px);
+    padding:pxToRem(8px) pxToRem(4px);
+    text-align: center;
+  }
+  td.kong{
+    width:pxToRem(47px);
+  }
+  td.kong1{
+    width:pxToRem(86px);
+  }
+  td.sex{
+    text-align: left;
+    width:pxToRem(60px);
+  }
+
+}
+input[type='checkbox']{
+  width:pxToRem(20px);
+  height:pxToRem(20px);
+  border: 1px solid #fff;
+}
+table>tr>td>table>tr>td
+{
+  border-top: none;
+  border-bottom: none;
+}
+h5{
+  font-size: pxToRem(28px);
+  margin-top:pxToRem(20px);
+}
+.img-icon2.img-pad>img{
+  margin-top: pxToRem(-9px);
+  padding: 0;
+}
+.education-footer{
+  @include pageFlag(#5E9DAA);
+}
+.culture-footer{
+  @include pageFlag(#6AA6AF);
+  margin-top: pxToRem(60px);
+  margin-bottom: pxToRem(-8px);
+  padding-bottom: pxToRem(-3px);
+}
+.keephealth-footer{
+  @include pageFlag(#5E9DAA);
+}
+
+
